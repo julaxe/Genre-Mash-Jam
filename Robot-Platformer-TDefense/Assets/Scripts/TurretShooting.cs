@@ -24,5 +24,6 @@ public class TurretShooting : MonoBehaviour
     {
         Debug.Log("Shoot");
         Instantiate(bulletObeject, bulletSpawmLocation, false);
+
     }
 }

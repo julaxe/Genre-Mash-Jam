@@ -20,7 +20,7 @@ public class BulletMovement : MonoBehaviour
     void Update()
     {
         //Bullet movement
-        body.velocity = Vector3.right * bulletSpeed;
+        body.velocity = Vector3.left * bulletSpeed;
         
     }
 
@@ -32,6 +32,5 @@ public class BulletMovement : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 
 }
