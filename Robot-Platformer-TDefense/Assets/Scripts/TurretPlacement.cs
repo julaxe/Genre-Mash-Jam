@@ -7,6 +7,8 @@ public class TurretPlacement : MonoBehaviour
     [SerializeField] private GameObject turretOne;
     [SerializeField] private GameObject turretTwo;
     [SerializeField] private GameObject turretThree;
+    [SerializeField] private TurretCooldown[] turrets;
+   
     private KeyCode[] keyCodes = {
          KeyCode.Alpha1,
          KeyCode.Alpha2,
@@ -32,7 +34,8 @@ public class TurretPlacement : MonoBehaviour
             if (Input.GetKeyDown(keyCodes[i]))
             {
                 int numberPressed = i + 1;
-                whatTurretToPlace(numberPressed);
+                if(!turrets[numberPressed -1].isCooldown && turrets[numberPressed - 1].possilbeToBuild)
+                    whatTurretToPlace(numberPressed);
             }
         }
     }
@@ -43,12 +46,15 @@ public class TurretPlacement : MonoBehaviour
         {
             case 1:
                 Instantiate(turretOne, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+                turrets[a - 1].towerOn();
                 break;
             case 2:
                 Instantiate(turretTwo, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+                turrets[a - 1].towerOn();
                 break;
             case 3:
                 Instantiate(turretThree, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+                turrets[a - 1].towerOn();
                 break;
             default:
                 Debug.Log("TurretNumber Error");

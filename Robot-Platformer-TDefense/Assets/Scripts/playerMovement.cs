@@ -6,6 +6,7 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 10;
+
     private Rigidbody2D body;
     public Camera cam1;
     public Camera cam2;
@@ -38,6 +39,7 @@ public class playerMovement : MonoBehaviour
                 cam2.enabled = false;
             }
         }
+        
     }
     private void FixedUpdate()
     {
