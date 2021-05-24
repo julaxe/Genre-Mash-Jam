@@ -39,7 +39,24 @@ public class playerMovement : MonoBehaviour
                 cam2.enabled = false;
             }
         }
-        
+        if (Input.GetKeyUp(KeyCode.Keypad1))
+        {
+            GameEvent.scraps += 1;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad2))
+        {
+            GameEvent.legs += 1;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad3))
+        {
+            GameEvent.arms += 1;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad4))
+        {
+            GameEvent.brains += 1;
+        }
+
+
     }
     private void FixedUpdate()
     {

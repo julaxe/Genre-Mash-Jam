@@ -27,6 +27,9 @@ public class GameEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        scrap.text = "Scraps x " + scraps.ToString();
+        leg.text = "Legs x " + legs.ToString();
+        arm.text = "Arms x " + arms.ToString();
+        brain.text = "Brains x " + brains.ToString();
     }
 }

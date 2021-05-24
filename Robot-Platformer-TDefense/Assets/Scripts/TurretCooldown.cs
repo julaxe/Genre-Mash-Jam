@@ -8,6 +8,8 @@ public class TurretCooldown : MonoBehaviour
     [SerializeField]
     private Image turretCooldown;
     [SerializeField]
+    private Image blocking;
+    [SerializeField]
     private Text textCooldown;
     [SerializeField]
     private int amountOfScraps;
@@ -25,6 +27,7 @@ public class TurretCooldown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        blocking.gameObject.SetActive(false);
         textCooldown.gameObject.SetActive(false);
         turretCooldown.fillAmount = 0.0f;
     }
@@ -36,12 +39,13 @@ public class TurretCooldown : MonoBehaviour
 
         if (possilbeToBuild)
         {
+            
             if (isCooldown)
                 countingCooldown();
         }
         else
         {
-            gameObject.SetActive(false);
+            blocking.gameObject.SetActive(true);
         }
     }
 
@@ -52,6 +56,7 @@ public class TurretCooldown : MonoBehaviour
             amountOfLegs <= GameEvent.brains &&
             amountOfBrains <= GameEvent.brains)
         {
+            blocking.gameObject.SetActive(false);
             possilbeToBuild = true;
         }
         else
