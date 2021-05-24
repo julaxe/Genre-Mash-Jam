@@ -21,8 +21,6 @@ public class TurretShooting : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             enemyLoc = collision.gameObject.GetComponent<Transform>().position;
-            Debug.Log(enemyLoc);
-            //checkDirectionOfEnemy(enemyLoc);
         }
 
 
