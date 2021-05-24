@@ -19,18 +19,19 @@ public class BulletMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Bullet movement
-        body.velocity = Vector3.left * bulletSpeed;
+        //Unspawn bullet after certian anoumt of time
+        if (Time.time > lifeTime)
+        {
+            Destroy(this.gameObject);
+        }
+ 
         
     }
 
     private void FixedUpdate()
     {
-        //Unspawn bullet after certian anoumt of time
-        if(Time.time > lifeTime)
-        {
-            Destroy(this.gameObject);
-        }
+        //Bullet movement
+        body.velocity = Vector3.right * bulletSpeed;
     }
 
 }
