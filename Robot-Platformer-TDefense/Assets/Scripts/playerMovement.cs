@@ -6,9 +6,10 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 10;
+    
+    private Rigidbody2D body;
     private bool isGrounded;
 
-    private Rigidbody2D body;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
