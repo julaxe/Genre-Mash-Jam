@@ -6,13 +6,18 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 10;
+    private bool isGrounded;
 
     private Rigidbody2D body;
+    public Transform groundCheck;
+    public float checkRadius;
+    public LayerMask whatIsGround;
     public Camera cam1;
     public Camera cam2;
     // Start is called before the first frame update
     void Start()
     {
+        
         cam1.enabled = true;
         cam2.enabled = false;
         body = GetComponent<Rigidbody2D>();
@@ -23,7 +28,8 @@ public class playerMovement : MonoBehaviour
     {
         
         //player jumping
-        if(Input.GetKeyDown(KeyCode.Space)) {
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded) 
+        {
             body.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
         if(Input.GetKeyUp(KeyCode.G))
@@ -60,6 +66,7 @@ public class playerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         //player movement on x axis 
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, 0);
     }
