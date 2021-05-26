@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
-{ 
+{
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 10;
     
@@ -62,7 +62,6 @@ public class playerMovement : MonoBehaviour
         {
             GameEvent.brains += 1;
         }
-       
 
 
     }
@@ -71,13 +70,6 @@ public class playerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         //player movement on x axis 
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, 0);
-    }
-
-    public enum ControllerMode
-    {
-        Play,
-        Build,
-        Menu
     }
 }
 
