@@ -107,6 +107,16 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    public void changeMovementSpeed(float a)
+    {
+        m_speed = a;
+    }
+
+    public float getMovementSpeed()
+    {
+        return m_speed;
+    }
+
     private void OnDrawGizmos()
     {
         
