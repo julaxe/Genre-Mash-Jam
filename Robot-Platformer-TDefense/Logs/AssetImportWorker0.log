@@ -299,3 +299,28 @@ Received Import Request.
 Start importing Assets/Prefab/Enemy.prefab using Guid(1f1ad6342bf38044db072c96f8a58f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750b1e6bc3ec1ab96447460bbf2da938') in 0.008720 seconds
   Import took 0.012747 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001013 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.774 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1942 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.8 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.946200 ms (FindLiveObjects: 0.226300 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.541400 ms  DeleteObjects: 0.133700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
