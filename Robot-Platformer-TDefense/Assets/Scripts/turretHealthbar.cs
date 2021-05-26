@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healthbar : MonoBehaviour
+public class turrethealthbar : MonoBehaviour
 {
     [SerializeField] private float amountOfHealth = 100;
     [SerializeField] private GameObject healthBar;
