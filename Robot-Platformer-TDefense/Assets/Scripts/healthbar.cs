@@ -1,34 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class healthbar : MonoBehaviour
+using UnityEngine.UI;
+public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private float amountOfHealth = 100;
-    [SerializeField] private GameObject healthBar;
+    private Slider slider;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        slider = GetComponent<Slider>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetMaxHealth(int health)
     {
-        
+        slider.maxValue = health;
+        slider.value = health;
     }
 
-    public void healthChange(float a)
+    public void SetHealth(int health)
     {
-        amountOfHealth += a;
-        healthBar.GetComponent<Transform>().localScale = new Vector3( 2* (amountOfHealth/ 100), 0.2f, 0f);   
+        slider.value = health;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public float GetHealth()
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            healthChange(-10);
-        } 
+        return slider.value;
     }
+
 }

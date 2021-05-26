@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 5548860905683087677}
   - component: {fileID: 5548860905683087679}
   - component: {fileID: 5548860905683087650}
-  - component: {fileID: 6202844962131593068}
   - component: {fileID: 5105227665823042191}
+  - component: {fileID: 5481099639339111504}
   m_Layer: 9
   m_Name: KnockBackTurret
   m_TagString: Untagged
@@ -243,20 +243,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7542071, y: 0.8943721}
   m_EdgeRadius: 0
---- !u!114 &6202844962131593068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5548860905683087672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2845fca1ffee2304d8ef36fd818dceec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountOfHealth: 100
-  healthBar: {fileID: 273866151418525235}
 --- !u!114 &5105227665823042191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,3 +257,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockbackForce: 2
   knockbackTimer: 3
+--- !u!114 &5481099639339111504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5548860905683087672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e0dfd32b1a5404a8c3d04ea4ba4205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfHealth: 100
+  healthBar: {fileID: 0}

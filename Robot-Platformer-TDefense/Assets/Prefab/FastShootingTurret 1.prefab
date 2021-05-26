@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6358435341512634519}
   - component: {fileID: 6358435341512634506}
   - component: {fileID: 6358435341512634518}
-  - component: {fileID: 327071960955389980}
+  - component: {fileID: 7008937315345443832}
   m_Layer: 9
   m_Name: FastShootingTurret 1
   m_TagString: Untagged
@@ -259,7 +259,7 @@ MonoBehaviour:
   fireRate: 0.5
   nextFire: 0
   enemyLoc: {x: 0, y: 0, z: 0}
---- !u!114 &327071960955389980
+--- !u!114 &7008937315345443832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,8 +268,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6358435341512634512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2845fca1ffee2304d8ef36fd818dceec, type: 3}
+  m_Script: {fileID: 11500000, guid: 75e0dfd32b1a5404a8c3d04ea4ba4205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfHealth: 100
-  healthBar: {fileID: 327071961705587187}
+  healthBar: {fileID: 0}

@@ -8,13 +8,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int m_MaxHealth;
     private int m_CurrentHealth;
 
-    private healthbar healthbar;
+    private HealthBar healthbar;
 
     void Start()
     {
-        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<healthbar>();
+        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();
         m_CurrentHealth = m_MaxHealth;
-        healthbar.healthChange(m_MaxHealth);
+        //healthbar.SetMaxHealth(m_MaxHealth);
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class Enemy : MonoBehaviour
     void TakeDamage(int damage)
     {
         m_CurrentHealth -= damage;
-        healthbar.healthChange(m_CurrentHealth);
+        healthbar.SetHealth(m_CurrentHealth);
     }
 }
