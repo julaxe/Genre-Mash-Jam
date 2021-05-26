@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     {
         healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();
         m_CurrentHealth = m_MaxHealth;
-        //healthbar.SetMaxHealth(m_MaxHealth);
+        healthbar.SetMaxHealth(m_MaxHealth);
     }
 
     // Update is called once per frame
