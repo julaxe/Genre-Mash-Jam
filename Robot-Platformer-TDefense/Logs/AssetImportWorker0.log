@@ -102,6 +102,9 @@ System memory in use after: 50.5 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2392.
 Total: 1.892200 ms (FindLiveObjects: 0.218300 ms CreateObjectMapping: 0.042400 ms MarkObjects: 1.547900 ms  DeleteObjects: 0.082800 ms)
 
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2405.
+Total: 1.541109 ms (FindLiveObjects: 0.148057 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.318658 ms  DeleteObjects: 0.012399 ms)
+
 ========================================================================
 Received Import Request.
   Time since last request: 476.564442 seconds.
@@ -285,7 +288,7 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.671 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1945 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 89.8 MB.
@@ -317,6 +320,62 @@ System memory in use after: 89.9 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2417.
 Total: 1.735900 ms (FindLiveObjects: 0.178900 ms CreateObjectMapping: 0.042200 ms MarkObjects: 1.429000 ms  DeleteObjects: 0.085100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.518184 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cad0037c30240ee044168122b5e048') in 0.052215 seconds
+  Import took 0.055288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.669364 seconds.
+  path: Assets/Prefab/SlowShootingTurret (1).prefab
+  artifactKey: Guid(a1751f3bff09abb47b50ffc6ac9536cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/SlowShootingTurret (1).prefab using Guid(a1751f3bff09abb47b50ffc6ac9536cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b512ea9b05e95aa77a250edf5e3cce21') in 0.013778 seconds
+  Import took 0.016921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Prefab/SlowShootingTurret (1).prefab
+  artifactKey: Guid(a1751f3bff09abb47b50ffc6ac9536cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/SlowShootingTurret (1).prefab using Guid(a1751f3bff09abb47b50ffc6ac9536cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b512ea9b05e95aa77a250edf5e3cce21') in 0.014168 seconds
+  Import took 0.016980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.102759 seconds.
+  path: Assets/Prefab/KnockBackTurret.prefab
+  artifactKey: Guid(c8553e97f03cdaa4b969da218a29e096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/KnockBackTurret.prefab using Guid(c8553e97f03cdaa4b969da218a29e096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750eac4b22b0b3585d32af98cfaaae70') in 0.017630 seconds
+  Import took 0.020932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.487397 seconds.
+  path: Assets/Prefab/FastShootingTurret 1.prefab
+  artifactKey: Guid(62a970dfd2350b14c8c2a3549868e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FastShootingTurret 1.prefab using Guid(62a970dfd2350b14c8c2a3549868e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891d18a587d885fdc2205b30f1b3b40b') in 0.013215 seconds
+  Import took 0.017694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 330.190344 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e982d1d140b2c67444b5adad7bb9f0d') in 0.017867 seconds
+  Import took 0.022090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.550665 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81afcadcc753ad45e66fc01c5bec48c') in 0.028065 seconds
+  Import took 0.031073 seconds .
 
 ========================================================================
 Received Prepare
@@ -367,6 +426,14 @@ Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2423.
 Total: 1.756700 ms (FindLiveObjects: 0.177500 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.448900 ms  DeleteObjects: 0.088400 ms)
 
 ========================================================================
+Received Import Request.
+  Time since last request: 81.585629 seconds.
+  path: Assets/Scripts/Turret.cs
+  artifactKey: Guid(9a82ecf475a1e95459fae6b7aaad7d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Turret.cs using Guid(9a82ecf475a1e95459fae6b7aaad7d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab50c85bca417eeee27cde8c0f67ea29') in 0.012931 seconds
+  Import took 0.017763 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.000688 seconds.
@@ -413,6 +480,14 @@ System memory in use after: 90.2 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2429.
 Total: 1.815000 ms (FindLiveObjects: 0.207500 ms CreateObjectMapping: 0.042700 ms MarkObjects: 1.476700 ms  DeleteObjects: 0.087300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.132109 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9368a0d477db90f615546d2b7ba8fc') in 0.040478 seconds
+  Import took 0.044179 seconds .
 
 ========================================================================
 Received Prepare
@@ -487,6 +562,46 @@ Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2438.
 Total: 1.847100 ms (FindLiveObjects: 0.216500 ms CreateObjectMapping: 0.042300 ms MarkObjects: 1.484400 ms  DeleteObjects: 0.103000 ms)
 
 ========================================================================
+Received Import Request.
+  Time since last request: 4.229705 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac30d32fae2687fbd94dd3ab15537491') in 0.022065 seconds
+  Import took 0.025809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.468760 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c00316a9f8856e6e16b30ce9745ea3') in 0.014402 seconds
+  Import took 0.018228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.969288 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7006103977c5327871d532f51116d197') in 0.022907 seconds
+  Import took 0.026713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.489593 seconds.
+  path: Assets/Prefab/WallTurrent.prefab
+  artifactKey: Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/WallTurrent.prefab using Guid(cfca67f64c2186d4f800801a181fdc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c304b333ff1b78eea1551831d7bf57') in 0.016226 seconds
+  Import took 0.019315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.996125 seconds.
+  path: Assets/Scripts/EnemyAttackingTurret.cs
+  artifactKey: Guid(de1c560bad0edec45a0e725e23530a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnemyAttackingTurret.cs using Guid(de1c560bad0edec45a0e725e23530a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3764a11cff23e48bd6b45acdb6fb7413') in 0.008727 seconds
+  Import took 0.012974 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.000666 seconds.
@@ -509,6 +624,14 @@ System memory in use after: 90.6 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2441.
 Total: 1.825000 ms (FindLiveObjects: 0.203600 ms CreateObjectMapping: 0.042300 ms MarkObjects: 1.489800 ms  DeleteObjects: 0.088600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.937424 seconds.
+  path: Assets/Scripts/Knockback.cs
+  artifactKey: Guid(e77a989a63d117444a4244fc01d33b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Knockback.cs using Guid(e77a989a63d117444a4244fc01d33b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbeec89006491d41783d11794d314ff') in 0.010458 seconds
+  Import took 0.013362 seconds .
 
 ========================================================================
 Received Prepare
@@ -646,6 +769,9 @@ Received Import Request.
 Start importing Assets/Prefab/FastShootingTurret 1.prefab using Guid(62a970dfd2350b14c8c2a3549868e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9236c3e879c8198234a3e8fdb0aef019') in 0.074261 seconds
   Import took 0.077370 seconds .
 
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2480.
+Total: 3.157705 ms (FindLiveObjects: 0.169938 ms CreateObjectMapping: 0.070747 ms MarkObjects: 2.898423 ms  DeleteObjects: 0.016775 ms)
+
 ========================================================================
 Received Import Request.
   Time since last request: 0.000209 seconds.
@@ -653,6 +779,30 @@ Received Import Request.
   artifactKey: Guid(fcaf115ac5c6b1a4ba554b7014c4fa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefab/ShootingTurret (2).prefab using Guid(fcaf115ac5c6b1a4ba554b7014c4fa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caabba59761a6aaa737fb84a408e2c12') in 0.012786 seconds
   Import took 0.015709 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.782 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1940 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.9 MB.
+System memory in use after: 94.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2483.
+Total: 1.585964 ms (FindLiveObjects: 0.154257 ms CreateObjectMapping: 0.060171 ms MarkObjects: 1.358043 ms  DeleteObjects: 0.012399 ms)
 
 ========================================================================
 Received Import Request.
@@ -693,6 +843,30 @@ System memory in use after: 94.2 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2465.
 Total: 1.760200 ms (FindLiveObjects: 0.194400 ms CreateObjectMapping: 0.041600 ms MarkObjects: 1.438300 ms  DeleteObjects: 0.084900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000899 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.777 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1940 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.0 MB.
+System memory in use after: 94.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2486.
+Total: 1.711047 ms (FindLiveObjects: 0.164832 ms CreateObjectMapping: 0.062359 ms MarkObjects: 1.468539 ms  DeleteObjects: 0.014587 ms)
 
 ========================================================================
 Received Import Request.
