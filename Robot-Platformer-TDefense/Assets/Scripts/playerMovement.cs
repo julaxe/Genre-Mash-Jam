@@ -1,24 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 10;
-    
-    private Rigidbody2D body;
-    private bool isGrounded;
+    //Menu
+    public RingMenu MainMenuPrefab;
+    protected RingMenu MainMenuInstance;
+    protected bool isMenuOn = false;
+    public Sprite icon;
+    [HideInInspector]
+    public PlayerMode Mode;
 
+    //Turret Place
+    public SpriteRenderer box;
+    
+
+    private Rigidbody2D body;
+    private bool isGrounded;    
+    public Canvas canvas;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
     public Camera cam1;
     public Camera cam2;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        box.gameObject.SetActive(false);
+        MainMenuInstance = Instantiate(MainMenuPrefab, canvas.transform);
+        MainMenuInstance.gameObject.SetActive(false);
+        SetMode(PlayerMode.Play);
         cam1.enabled = true;
         cam2.enabled = false;
         body = GetComponent<Rigidbody2D>();
@@ -29,7 +45,7 @@ public class playerMovement : MonoBehaviour
     {
         
         //player jumping
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded) 
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) 
         {
             body.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
@@ -62,6 +78,18 @@ public class playerMovement : MonoBehaviour
         {
             GameEvent.brains += 1;
         }
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            if (MainMenuInstance.gameObject.activeInHierarchy)
+            {
+                SetMode(PlayerMode.Play);
+            }
+            else
+            {
+                SetMode(PlayerMode.Menu);
+                
+            }
+        }
 
 
     }
@@ -70,6 +98,32 @@ public class playerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         //player movement on x axis 
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, 0);
+    }
+    public void SetMode(PlayerMode mode)
+    {
+        Mode = mode;
+        switch(mode)
+        {
+            case PlayerMode.Play:
+                box.gameObject.SetActive(false);
+                MainMenuInstance.gameObject.SetActive(false);
+                break;
+            case PlayerMode.Build:
+                box.gameObject.SetActive(true);
+                MainMenuInstance.gameObject.SetActive(false);
+                break;
+            case PlayerMode.Menu:
+                box.gameObject.SetActive(false);
+                MainMenuInstance.gameObject.SetActive(true);
+                break;
+        }
+    }
+
+    public enum PlayerMode
+    {
+        Play,
+        Build,
+        Menu
     }
 }
 
