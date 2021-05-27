@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5870312001248861812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234915659612150964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d1e68643c2a5946b8cf41c245fb744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2726245976976844273
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,22 +188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9189c89feaff404eae26c42a8a5ebb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObeject: {fileID: 7666555394293126631, guid: c65efca653730014a8ade23912b4a75f, type: 3}
+  bulletObeject: {fileID: 2963574351223988103, guid: b2ac406d563e9124da64f3d7aeccb8d0, type: 3}
   enemyLoc: {x: 0, y: 0, z: 0}
   damageToTurret: 5
   attackTimer: 3
---- !u!114 &5870312001248861812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234915659612150964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85d1e68643c2a5946b8cf41c245fb744, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3505923852750294226
 GameObject:
   m_ObjectHideFlags: 0
