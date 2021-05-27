@@ -5,14 +5,15 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private int m_MaxHealth;
+    public int m_MaxHealth = 100;
     private int m_CurrentHealth;
 
-    private HealthBar healthbar;
+    protected HealthBar healthbar;
+    
 
     void Start()
     {
-        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();
+        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();                
         m_CurrentHealth = m_MaxHealth;
         healthbar.SetMaxHealth(m_MaxHealth);
     }

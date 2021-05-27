@@ -15,12 +15,13 @@ public class playerMovement : MonoBehaviour
     [HideInInspector]
     public PlayerMode Mode;
 
+    
     //Turret Place
-    public SpriteRenderer box;
+    public TowerSpaceCheck box;
     
 
     private Rigidbody2D body;
-    private bool isGrounded;    
+    public bool isGrounded;    
     public Canvas canvas;
     public Transform groundCheck;
     public float checkRadius;
@@ -30,7 +31,8 @@ public class playerMovement : MonoBehaviour
     
     // Start is called before the first frame update
     void Start()
-    {
+    {        
+        box = FindObjectOfType<TowerSpaceCheck>();
         box.gameObject.SetActive(false);
         MainMenuInstance = Instantiate(MainMenuPrefab, canvas.transform);
         MainMenuInstance.gameObject.SetActive(false);

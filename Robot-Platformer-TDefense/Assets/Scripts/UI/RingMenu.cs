@@ -64,7 +64,7 @@ public class RingMenu : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameEvent.name = Data.Elements[activeElement].Name;
-            //player.box.sprite = Data.Elements[activeElement].Icon;
+            player.box.renderer.sprite = Data.Elements[activeElement].Icon;
             
             player.name = Data.Elements[activeElement].Name;
             Debug.Log(player.name);

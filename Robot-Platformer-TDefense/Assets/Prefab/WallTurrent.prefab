@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &7544018216755965609
+--- !u!114 &4058574707880558366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,8 +277,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3168401861525922364, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
 --- !u!224 &3386533427585763395 stripped
 RectTransform:
