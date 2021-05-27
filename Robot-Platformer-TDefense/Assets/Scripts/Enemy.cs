@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         m_CurrentHealth -= damage;
         healthbar.SetHealth(m_CurrentHealth);
