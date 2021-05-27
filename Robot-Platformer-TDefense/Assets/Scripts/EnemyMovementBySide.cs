@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovementBySide : MonoBehaviour
 {
     [SerializeField] private float m_speed;
-    [Range(0,1)]
+    [Range(0, 1)]
     [SerializeField] private float m_acceleration; // 0 to 1
     [SerializeField] private float m_JumpTime;
 
 
     private Transform m_EnergyCoreTransform;
     private Rigidbody2D m_rb;
+    private bool m_facingRight = true;
 
     //ground movement
     private Vector2 m_desiredVelocity;
@@ -29,15 +30,24 @@ public class EnemyMovement : MonoBehaviour
     {
         m_EnergyCoreTransform = GameObject.Find("EnergyCore").transform;
         m_rb = transform.GetComponent<Rigidbody2D>();
+
+        float distance = m_EnergyCoreTransform.position.x - transform.position.x;
+        if (distance > 0)
+        {
+            m_facingRight = true;
+        }
+        else
+        {
+            m_facingRight = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(m_grounded)
+        if (m_grounded)
         {
-            float distance = m_EnergyCoreTransform.position.x - transform.position.x;
-            if(distance > 0)
+            if (m_facingRight)
             {
                 m_desiredVelocity = new Vector2(m_speed, 0.0f);
             }
@@ -63,7 +73,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Platform")
         {
             Grounded();
         }
@@ -71,20 +81,31 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "JumpPoint")
+        if (m_grounded)
         {
-            //point where he is going to land
-            m_targetJump = collision.transform.parent.transform.Find("Point3");
-            m_middlePointJump = collision.transform.parent.transform.Find("Point2");
-            m_startJump =transform.position;
+            if (collision.tag == "JumpPoint")
+            {
 
-            Jump();
+                m_targetJump = collision.transform.parent.transform.Find("Point3");
+                m_middlePointJump = collision.transform.parent.transform.Find("Point2");
+                m_startJump = transform.position;
 
-            m_jumping = true;
-            m_grounded = false;
+                float distance = m_targetJump.position.x - m_startJump.x;
+                //facing the same direction
+                if ((m_facingRight && distance > 0) || (!m_facingRight && distance < 0))
+                {
+                    Jump();
+                }
+                Debug.Log("JumpPoint");
+            }
+            if (collision.tag == "TurnLeft")
+            {
+                m_facingRight = false;
+            }
         }
-    }
+        
 
+    }
     private void Grounded()
     {
         m_grounded = true;
@@ -109,6 +130,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        
+
     }
 }
+
