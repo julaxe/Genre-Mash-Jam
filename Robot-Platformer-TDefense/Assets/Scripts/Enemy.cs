@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();
+        healthbar.slider = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>().GetComponent<Slider>();
         m_CurrentHealth = m_MaxHealth;
         healthbar.SetMaxHealth(m_MaxHealth);
     }
@@ -26,7 +28,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         m_CurrentHealth -= damage;
         healthbar.SetHealth(m_CurrentHealth);

@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Platform
   - JumpPoint
+  - Turret
+  - TurnLeft
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Enemy
   - Turret
   - TurretLineOfSight
-  - 
+  - TurretSpace
   - 
   - 
   - 

@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
 
     //jumping
     private Transform m_targetJump;
-    private Transform m_startJump;
+    private Vector2 m_startJump;
     private Transform m_middlePointJump;
     private bool m_jumping = false;
     private float m_jumpTimer = 0.0f;
@@ -76,7 +76,7 @@ public class EnemyMovement : MonoBehaviour
             //point where he is going to land
             m_targetJump = collision.transform.parent.transform.Find("Point3");
             m_middlePointJump = collision.transform.parent.transform.Find("Point2");
-            m_startJump = collision.transform;
+            m_startJump =transform.position;
 
             Jump();
 
@@ -101,10 +101,20 @@ public class EnemyMovement : MonoBehaviour
     {
         if (m_jumpTimer < m_JumpTime)
         {
-            Vector2 jumpPosition = CurveMath.QuadraticCurve(m_startJump.position, m_middlePointJump.position, m_targetJump.position, m_jumpTimer / m_JumpTime);
+            Vector2 jumpPosition = CurveMath.QuadraticCurve(m_startJump, m_middlePointJump.position, m_targetJump.position, m_jumpTimer / m_JumpTime);
             transform.position = jumpPosition;
             m_jumpTimer += Time.fixedDeltaTime;
         }
+    }
+
+    public void changeMovementSpeed(float a)
+    {
+        m_speed = a;
+    }
+
+    public float getMovementSpeed()
+    {
+        return m_speed;
     }
 
     private void OnDrawGizmos()

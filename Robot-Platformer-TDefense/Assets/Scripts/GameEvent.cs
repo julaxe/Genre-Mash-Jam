@@ -9,6 +9,7 @@ public class GameEvent : MonoBehaviour
     public static int legs;
     public static int arms;
     public static int brains;
+    public static string name;
 
     [SerializeField] private Text scrap;
     [SerializeField] private Text leg;
@@ -18,6 +19,7 @@ public class GameEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        name = "";
         legs = 0;
         arms = 0;
         brains = 0;

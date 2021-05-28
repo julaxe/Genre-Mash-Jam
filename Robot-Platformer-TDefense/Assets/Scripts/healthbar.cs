@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
-    private Slider slider;
-
+    public Slider slider;
+    
     private void Start()
     {
         slider = GetComponent<Slider>();
@@ -13,8 +13,15 @@ public class HealthBar : MonoBehaviour
 
     public void SetMaxHealth(int health)
     {
-        slider.maxValue = health;
-        slider.value = health;
+        if (slider == null)
+        {
+            Debug.Log("Null");
+        }
+        else
+        {
+            slider.maxValue = health;
+            slider.value = health;
+        }
     }
 
     public void SetHealth(int health)

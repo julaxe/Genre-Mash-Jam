@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4639d35bb3d6604a8816380d95928ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e8c20aa7bc4a6f4186b7e62e778f700, type: 3}
   m_Name: Tower3
   m_EditorClassIdentifier: 
-  Name: 
-  Icon: {fileID: 0}
+  Name: Tower3
+  Icon: {fileID: 21300000, guid: 295f0b3f5f9ebf74ca1ea0250ea9157a, type: 3}
   NextRing: {fileID: 0}

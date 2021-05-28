@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e256d0cb8118bc747b5c94e4b22571e7, type: 3}
-  m_Name: MainRing
+  m_Script: {fileID: 11500000, guid: 4cae8ed2c2b8378479e0bf1386165b3f, type: 3}
+  m_Name: RingMain
   m_EditorClassIdentifier: 
   Elements:
   - {fileID: 11400000, guid: 934414ee53d34a243a55bf8204c4f2fd, type: 2}
   - {fileID: 11400000, guid: 0537cbd8c395e1544b08a3f4179aa8b5, type: 2}
   - {fileID: 11400000, guid: 5934ebd92bc016b4e80dffcd6631b51c, type: 2}
+  - {fileID: 11400000, guid: a21cb139625c29243bc0bba8bab29481, type: 2}
+  - {fileID: 11400000, guid: 262722a07469a1f4ab3d81945f2bf1f1, type: 2}

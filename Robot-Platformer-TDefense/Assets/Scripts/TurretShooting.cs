@@ -10,14 +10,17 @@ public class TurretShooting : MonoBehaviour
     [SerializeField] private Vector3 enemyLoc;
     private Transform bulletSpawmLocation;
     private Vector3 shootDirection;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         bulletSpawmLocation = transform;
         bulletSpawmLocation.position = new Vector2(transform.position.x, transform.position.y);
     }
+
     private void OnTriggerStay2D(Collider2D collision)
-    {
+    {        
         if (collision.gameObject.tag == "Enemy")
         {
             enemyLoc = collision.gameObject.GetComponent<Transform>().position;
