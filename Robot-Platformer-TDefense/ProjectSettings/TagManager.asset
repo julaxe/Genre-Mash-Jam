@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - JumpPoint
   - Turret
+  - TurnLeft
   layers:
   - Default
   - TransparentFX
