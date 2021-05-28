@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343094b3f56734541bc3c1f552929de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 0}
 --- !u!1 &5093704187663040446
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  healthbar: {fileID: 0}
 --- !u!1001 &1876238869036789153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3816483449407634108, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
       propertyPath: m_Name
-      value: WallHealthBar
+      value: HealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 3816483449407634108, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
       propertyPath: m_Layer

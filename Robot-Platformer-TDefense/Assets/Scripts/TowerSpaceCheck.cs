@@ -27,7 +27,7 @@ public class TowerSpaceCheck : MonoBehaviour
                 renderer.color = new Color(0, 1, 0, 1);
                 if (Input.GetMouseButtonDown(0))
                 {
-                    whatTurretToPlace(1);
+                    whatTurretToPlace(player.name);
                     player.SetMode(playerMovement.PlayerMode.Play);
                 }
 
@@ -58,13 +58,13 @@ public class TowerSpaceCheck : MonoBehaviour
             iscollision = false;           
         }
     }
-    void whatTurretToPlace(int a)
+    void whatTurretToPlace(string a)
     {
         switch (a)
         {
-            case 1:
+            case "Tower1":
                 Turret tower1;
-                tower1 = (Turret)Instantiate(turrets[a - 1], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+                tower1 = (Turret)Instantiate(turrets[0], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
                 if(tower1 == null)
                 {
                     Debug.Log("GameObject is null");
@@ -74,13 +74,16 @@ public class TowerSpaceCheck : MonoBehaviour
                     Debug.Log("GameObject is null");
                 }                
                 break;
-            case 2:
-                Instantiate(turrets[a - 1], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+            case "Tower2":
+                Instantiate(turrets[1], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
                 break;
-            case 3:
-                Instantiate(turrets[a - 1], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+            case "Tower3":
+                Instantiate(turrets[2], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
                 break;
-            
+            case "Tower4":
+                Instantiate(turrets[3], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
+                break;
+
         }
     }
 }

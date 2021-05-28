@@ -10,12 +10,15 @@ public class Turret : MonoBehaviour
     private int m_MaxHealth;
     private int m_CurrentHealth;
 
-    public HealthBar healthbar;    
+    public newHealthBar healthbar;    
 
     void Start()
     {
-        healthbar = transform.Find("CanvasHealth").Find("WallHealthBar").GetComponent<HealthBar>();
-        healthbar.slider = healthbar.GetComponent<Slider>();
+        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<newHealthBar>();
+        if (healthbar.slider == null)
+        {
+            healthbar.slider = healthbar.GetComponent<Slider>();
+        }
         m_CurrentHealth = m_MaxHealth;
         healthbar.SetMaxHealth(m_MaxHealth);        
     }
