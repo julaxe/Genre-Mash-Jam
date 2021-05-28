@@ -9,12 +9,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int m_MaxHealth;
     private int m_CurrentHealth;
 
-    private HealthBar healthbar;
+    private newHealthBar healthbar;
 
     void Start()
     {
-        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>();
-        healthbar.slider = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>().GetComponent<Slider>();
+        healthbar = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<newHealthBar>();
+        //healthbar.slider = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBar>().GetComponent<Slider>();
         m_CurrentHealth = m_MaxHealth;
         healthbar.SetMaxHealth(m_MaxHealth);
     }

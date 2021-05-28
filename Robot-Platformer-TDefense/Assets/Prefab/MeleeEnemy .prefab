@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5234535328358033252}
   - component: {fileID: 5234535328358033253}
   - component: {fileID: 5234535328358033254}
-  - component: {fileID: 5234535328358033255}
   - component: {fileID: 5234535328358033250}
-  - component: {fileID: 5234535328358033251}
   - component: {fileID: 6761828609418917119}
+  - component: {fileID: 6347523483425155931}
+  - component: {fileID: 4833455917387961117}
   m_Layer: 8
   m_Name: 'MeleeEnemy '
   m_TagString: Enemy
@@ -101,21 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
---- !u!114 &5234535328358033255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5234535328358033256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cbee965964c434abfb3212dd80f341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 5
-  m_acceleration: 0.05
-  m_JumpTime: 2
 --- !u!50 &5234535328358033250
 Rigidbody2D:
   serializedVersion: 4
@@ -137,32 +122,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &5234535328358033251
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5234535328358033256}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2}
-  m_EdgeRadius: 0
 --- !u!114 &6761828609418917119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,18 +136,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToTurret: 5
   attackTimer: 3
---- !u!114 &4325379554021416173
+--- !u!114 &6347523483425155931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8958241711964184109}
+  m_GameObject: {fileID: 5234535328358033256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85d1e68643c2a5946b8cf41c245fb744, type: 3}
+  m_Script: {fileID: 11500000, guid: 0908e071591ddeb499fe377fcdb35660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_speed: 2
+  m_acceleration: 0.05
+  m_JumpTime: 2
+--- !u!70 &4833455917387961117
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234535328358033256}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!1001 &5234535328587392145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,10 +292,5 @@ PrefabInstance:
 --- !u!224 &8958241712759931251 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3816483450220422626, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
-  m_PrefabInstance: {fileID: 5234535328587392145}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8958241711964184109 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3816483449407634108, guid: e902246ed33019345b1ff4bf7ed15deb, type: 3}
   m_PrefabInstance: {fileID: 5234535328587392145}
   m_PrefabAsset: {fileID: 0}
