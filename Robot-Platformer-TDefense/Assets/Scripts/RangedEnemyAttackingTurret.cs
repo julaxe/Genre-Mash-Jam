@@ -37,8 +37,8 @@ public class RangedEnemyAttackingTurret : MonoBehaviour
     {
         if (collision.gameObject.tag == "Turret")
         {
-            savedMovementSpeed = this.gameObject.GetComponent<EnemyMovement>().getMovementSpeed();
-            this.gameObject.GetComponent<EnemyMovement>().changeMovementSpeed(0); 
+            savedMovementSpeed = this.gameObject.GetComponent<EnemyMovementBySide>().getMovementSpeed();
+            this.gameObject.GetComponent<EnemyMovementBySide>().changeMovementSpeed(0); 
         }
 
         if (collision.gameObject.tag == "Turret" && canAttack == true)
@@ -56,7 +56,7 @@ public class RangedEnemyAttackingTurret : MonoBehaviour
     {
         if (collision.gameObject.tag == "Turret")
         {
-            this.gameObject.GetComponent<EnemyMovement>().changeMovementSpeed(savedMovementSpeed);
+            this.gameObject.GetComponent<EnemyMovementBySide>().changeMovementSpeed(savedMovementSpeed);
         }
     }
 }
