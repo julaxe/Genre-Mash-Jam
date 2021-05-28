@@ -25,9 +25,9 @@ public class Knockback : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && canKnockback == true)
+         if (collision.gameObject.tag == "Enemy" && canKnockback == true)
         {
             if (transform.position.x > collision.gameObject.GetComponent<Transform>().position.x)
             {

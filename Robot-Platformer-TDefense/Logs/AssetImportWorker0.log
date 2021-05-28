@@ -1,17 +1,17 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.0f1 (3721df5a8b28) revision 3613151'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'ko' Physical Memory: 16315 MB
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32692 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-F:\Program Files\2020.2.0f1\Editor\Unity.exe
+C:\Users\Dio\Desktop\2020.2.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Coding/MeshJam/Genre-Mash-Jam/Robot-Platformer-TDefense
+C:/Users/Dio/Desktop/Genre-Mash-Jam/Genre-Mash-Jam/Robot-Platformer-TDefense
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
@@ -22,15 +22,15 @@ Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 31.64 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
-[Subsystems] Discovering subsystems at path F:/Program Files/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Coding/MeshJam/Genre-Mash-Jam/Robot-Platformer-TDefense/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Dio/Desktop/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Dio/Desktop/Genre-Mash-Jam/Genre-Mash-Jam/Robot-Platformer-TDefense/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Renderer: Radeon RX 580 Series (ID=0x67df)
     Vendor:   
-    VRAM:     8031 MB
-    Driver:   27.21.14.5671
+    VRAM:     8137 MB
+    Driver:   26.20.13001.29010
 Initialize mono
 Mono path[0] = 'F:/Program Files/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Program Files/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
