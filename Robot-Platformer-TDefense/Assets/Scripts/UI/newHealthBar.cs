@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class HealthBar : MonoBehaviour
+
+public class newHealthBar : MonoBehaviour
 {
     public Slider slider;
-    
+
     private void Start()
     {
-        slider = GetComponent<Slider>();
+        slider = GetComponent<Slider>();        
     }
 
     public void SetMaxHealth(int health)
@@ -33,5 +34,4 @@ public class HealthBar : MonoBehaviour
     {
         return slider.value;
     }
-
 }
