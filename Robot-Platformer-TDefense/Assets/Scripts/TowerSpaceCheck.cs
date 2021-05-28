@@ -65,14 +65,7 @@ public class TowerSpaceCheck : MonoBehaviour
             case "Tower1":
                 Turret tower1;
                 tower1 = (Turret)Instantiate(turrets[0], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
-                if(tower1 == null)
-                {
-                    Debug.Log("GameObject is null");
-                }
-                if(tower1.transform.Find("CanvasHealth").Find("WallHealthBar").GetComponent<newHealthBar>() == null)
-                {
-                    Debug.Log("GameObject is null");
-                }                
+               
                 break;
             case "Tower2":
                 Instantiate(turrets[1], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.identity);
